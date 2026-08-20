@@ -1,0 +1,12 @@
+{
+  "codeConnect": {
+    "parser": "react",
+    "importPaths": {
+      "@/components/*": "src/components/*",
+      "@/lib/tokens/*": "src/lib/tokens/*"
+    },
+    "include": [
+      "src/components/**/*.figma.tsx"
+    ]
+  }
+}
