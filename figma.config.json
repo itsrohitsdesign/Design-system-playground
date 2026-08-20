@@ -6,8 +6,10 @@
       "@/lib/tokens/*": "src/lib/tokens/*"
     },
     "include": [
-      "src/components/**/*.figma.tsx",
-      "src/components/**/*.tsx"
+      "src/components/**/*.figma.tsx"
+    ],
+    "exclude": [
+      "node_modules/**"
     ]
   }
 }
