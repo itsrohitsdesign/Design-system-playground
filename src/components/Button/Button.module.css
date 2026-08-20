@@ -1,0 +1,12 @@
+.button {
+  gap: var(--space-8);
+}
+
+.button:where(.ant-btn-sm) {
+  gap: var(--space-4);
+}
+
+.trailingIcon {
+  display: inline-flex;
+  align-items: center;
+}
