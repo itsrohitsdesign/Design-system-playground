@@ -23,7 +23,7 @@ figma.connect(
         'Large':  'Large',
       }),
 
-      // Hover/Pressed are CSS-only — only Disabled maps to a real prop
+      // Hover/Pressed are CSS-only - only Disabled maps to a real prop
       state: figma.enum('State', {
         'Default':  'Default',
         'Hover':    'Default',
