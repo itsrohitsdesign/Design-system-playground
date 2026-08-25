@@ -1,0 +1,53 @@
+.checkbox :global(.ant-checkbox) {
+  border-radius: var(--radius-sm);
+}
+
+.checkbox.md :global(.ant-checkbox-inner) {
+  width: var(--icon-md);
+  height: var(--icon-md);
+}
+
+/* Figma's Indeterminate mark is a solid primary fill with a white bar, not
+   AntD's default white box + small primary square. */
+.checkbox :global(.ant-checkbox-indeterminate .ant-checkbox-inner) {
+  background-color: var(--primary-solid) !important;
+  border-color: var(--primary-solid) !important;
+}
+
+.checkbox :global(.ant-checkbox-indeterminate .ant-checkbox-inner::after) {
+  background-color: var(--neutral-00) !important;
+  width: 62.5% !important;
+  height: 12.5% !important;
+}
+
+.withSupportingText {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-8);
+  cursor: pointer;
+}
+
+.withSupportingText .checkbox {
+  padding-top: var(--space-2);
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.label {
+  font: var(--label-medium);
+  font-size: var(--size-sm);
+  font-weight: 500;
+  line-height: var(--leading-xs);
+  color: var(--text-primary);
+}
+
+.supportingText {
+  font-size: var(--size-sm);
+  font-weight: 400;
+  line-height: var(--leading-sm);
+  color: var(--text-secondary);
+}

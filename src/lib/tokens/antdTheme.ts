@@ -3,6 +3,8 @@ import { typographyTheme } from '@/lib/tokens/typographyTheme';
 import { primitives } from '@/lib/tokens/primitives';
 import { spacing } from '@/lib/tokens/scale';
 import { buttonTheme } from '@/lib/tokens/buttonTheme';
+import { checkboxTheme } from '@/lib/tokens/checkboxTheme';
+import { radioTheme } from '@/lib/tokens/radioTheme';
 
 /**
  * Root Ant Design theme for the "AI Design System" library. Component-level
@@ -20,5 +22,7 @@ export const antdTheme: ThemeConfig = {
   },
   components: {
     Button: buttonTheme,
+    Checkbox: checkboxTheme,
+    Radio: radioTheme,
   },
 };

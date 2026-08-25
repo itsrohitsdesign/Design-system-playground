@@ -1,0 +1,35 @@
+.radio.md :global(.ant-radio-inner) {
+  width: var(--icon-md);
+  height: var(--icon-md);
+}
+
+.withSupportingText {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-8);
+  cursor: pointer;
+}
+
+.withSupportingText .radio {
+  padding-top: var(--space-2);
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.label {
+  font-size: var(--size-sm);
+  font-weight: 500;
+  line-height: var(--leading-xs);
+  color: var(--text-primary);
+}
+
+.supportingText {
+  font-size: var(--size-sm);
+  font-weight: 400;
+  line-height: var(--leading-sm);
+  color: var(--text-secondary);
+}

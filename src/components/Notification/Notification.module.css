@@ -1,0 +1,175 @@
+.card {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  width: 360px;
+  background: var(--notification-bg);
+  border: 1px solid var(--notification-border);
+  border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
+  box-shadow:
+    0px 4px 6px -2px rgba(0, 0, 0, 0.03),
+    0px 12px 16px -4px rgba(0, 0, 0, 0.08);
+  font-family: var(--family-sans), 'Geist', sans-serif;
+  color: var(--notification-text);
+}
+
+.short {
+  height: var(--space-48);
+  align-items: center;
+}
+
+.tall {
+  align-items: flex-start;
+}
+
+.accent {
+  flex-shrink: 0;
+  width: 3px;
+  align-self: stretch;
+  background: var(--notification-text);
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.icon {
+  flex-shrink: 0;
+  display: flex;
+  color: var(--notification-text);
+}
+
+.short .icon {
+  align-items: center;
+}
+
+.tall .icon {
+  padding-top: 14px;
+}
+
+.body {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.short .body {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: 15px 0;
+}
+
+.tall .body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-12) 0;
+}
+
+.card.tall.toast .body {
+  gap: 24px;
+  padding: var(--space-8) 0 16px;
+}
+
+.card.tall.toast .title,
+.card.tall.toast .message {
+  margin: 0;
+}
+
+.card.tall.toast .titleMessageGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.titleInline {
+  flex-shrink: 0;
+  font-size: var(--size-sm);
+  font-weight: 600;
+  line-height: var(--icon-sm);
+  white-space: nowrap;
+}
+
+.messageInline {
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: var(--size-sm);
+  font-weight: 400;
+  line-height: var(--leading-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--size-sm);
+  font-weight: 600;
+  line-height: var(--icon-sm);
+}
+
+.message {
+  margin: 0;
+  font-size: var(--size-sm);
+  font-weight: 400;
+  line-height: var(--leading-sm);
+}
+
+.timestamp {
+  margin: 0;
+  font-size: var(--size-sm);
+  font-weight: 500;
+  line-height: var(--leading-xs);
+}
+
+.actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding-right: var(--space-12);
+}
+
+.short .actions,
+.tall .actions {
+  align-self: center;
+}
+
+.tall .actions {
+  padding-top: var(--space-8);
+}
+
+.actionButton {
+  flex-shrink: 0;
+  height: 32px;
+  padding: 0 var(--space-12);
+  border: 1px solid var(--notification-border);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--notification-text);
+  font-family: inherit;
+  font-size: var(--size-sm);
+  font-weight: 500;
+  line-height: var(--leading-xs);
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  background: rgba(26, 29, 34, 0.04);
+}
+
+.closeButton {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--notification-text);
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background: rgba(26, 29, 34, 0.04);
+}
